@@ -119,7 +119,7 @@ namespace FinalPJ
                     Console.WriteLine($"CORRECT! {name} attacked the boss for {dmg} units!");
                     bossHp -=dmg;
                     round++;
-                    Console.WriteLine($"\n============== Round {round} ==============\n");
+                    Console.WriteLine($"\n============== Round {round+1} ==============\n");
                     Console.WriteLine($"Boss HP = {bossHp}\n{name}'s HP = {hp}\n");
                 }
                 else
@@ -129,7 +129,7 @@ namespace FinalPJ
                     Console.WriteLine($"ANSWER : {Convert.ToInt32(result)}");
                     hp -= bossDmg;
                     round++;
-                    Console.WriteLine($"\n============== Round {round} ==============\n");
+                    Console.WriteLine($"\n============== Round {round+1} ==============\n");
                     Console.WriteLine($"Boss HP = {bossHp}\n{name}'s HP = {hp}\n");
                 }
                 if (hp <= 0)
